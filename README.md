@@ -7,4 +7,6 @@ Simple Role Based Authentication For Laravel Projects
 > Created Roles and Permissions Tables
 > Created DB seeds for Admin, Created Relationship between user and roles model with permissions
 > Set default user role to 1 in UserController
+> Setup Admin Layout Dashboard 
+> Setup AdminMiddleware with isAdmin() function in users model
 >

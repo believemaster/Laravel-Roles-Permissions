@@ -9,4 +9,4 @@ Simple Role Based Authentication For Laravel Projects
 > Set default user role to 1 in UserController
 > Setup Admin Layout Dashboard 
 > Setup AdminMiddleware with isAdmin() function in users model
->
+> Made common HasRoleMiddleware and hasRole() for all roles and removed AdminMiddleware and isAdmin()

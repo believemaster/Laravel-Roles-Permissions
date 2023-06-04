@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\PermissionController;
+use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,8 +31,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware(['auth', 'role:admin'])->group(function() {
-    Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::middleware(['auth', 'role:admin'])->name('admin.')->prefix('/admin')->group(function() {
+    Route::get('/', [AdminController::class, 'index'])->name('index');
+    Route::resource('/roles', RoleController::class);
+    Route::resource('/permissions', PermissionController::class);
 });
 
 Route::middleware(['auth', 'role:writer'])->group(function() {

@@ -4,5 +4,4 @@
             {{ __('Admin Dashboard') }}
         </h2>
     </x-slot>
-
 </x-admin-layout>

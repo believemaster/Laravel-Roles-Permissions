@@ -13,3 +13,4 @@ Simple Role Based Authentication For Laravel Projects
 > Created Roles and Permissions Route For CRUD Operation
 > Displaying Roles & Permissions in Admin Dashboard
 > Create Page For Roles and Permissions
+> Store New Roles and Permissions

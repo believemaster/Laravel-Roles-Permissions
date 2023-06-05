@@ -12,4 +12,4 @@ Simple Role Based Authentication For Laravel Projects
 > Made common HasRoleMiddleware and hasRole() for all roles and removed AdminMiddleware and isAdmin()
 > Created Roles and Permissions Route For CRUD Operation
 > Displaying Roles & Permissions in Admin Dashboard
->
+> Create Page For Roles and Permissions

@@ -14,3 +14,5 @@ Simple Role Based Authentication For Laravel Projects
 > Displaying Roles & Permissions in Admin Dashboard
 > Create Page For Roles and Permissions
 > Store New Roles and Permissions
+> Update Rols and Permissions
+>

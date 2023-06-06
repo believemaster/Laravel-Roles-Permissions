@@ -27,7 +27,7 @@
                                 class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
                                 {{ $permission->name }}</th>
                             <td class="px-6 py-4 text-right">
-                                <a href=""
+                                <a href="{{ route('admin.permissions.edit', $permission->id) }}"
                                     class="font-medium text-blue-600 hover:underline dark:text-blue-500">Edit</a>
                             </td>
                         </tr>

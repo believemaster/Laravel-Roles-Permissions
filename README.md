@@ -16,4 +16,5 @@ Simple Role Based Authentication For Laravel Projects
 > Store New Roles and Permissions
 > Update Roles and Permissions
 > Delete Roles and Permissions
+> Assign Permissions to the Role
 > 

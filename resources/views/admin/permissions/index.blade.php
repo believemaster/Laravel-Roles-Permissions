@@ -27,8 +27,17 @@
                                 class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
                                 {{ $permission->name }}</th>
                             <td class="px-6 py-4 text-right">
-                                <a href="{{ route('admin.permissions.edit', $permission->id) }}"
-                                    class="font-medium text-blue-600 hover:underline dark:text-blue-500">Edit</a>
+                                <div class="flex space-x-2">
+                                    <a href="{{ route('admin.permissions.edit', $permission->id) }}"
+                                        class="font-medium text-blue-600 hover:underline dark:text-blue-500">Edit</a>
+                                    <form method="post" action="{{ route('admin.permissions.destroy', $permission->id) }}"
+                                        onsubmit="return confirm('Are you sure!');">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit"
+                                            class="font-medium text-red-600 hover:underline dark:text-red-500">Delete</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     @endforeach

@@ -17,4 +17,5 @@ Simple Role Based Authentication For Laravel Projects
 > Update Roles and Permissions
 > Delete Roles and Permissions
 > Assign Permissions to the Role
+> Created Users index page showing users and their roles
 > 

@@ -27,4 +27,10 @@ class UserController extends Controller
 
         return to_route('admin.users.index')->with('message', 'User updated');
     }
+
+    public function destroy(User $user) {
+        $user->delete();
+
+        return to_route('admin.users.index')->with('message', 'User deleted');        
+    }
 }

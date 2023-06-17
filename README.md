@@ -20,4 +20,4 @@ Simple Role Based Authentication For Laravel Projects
 > Created Users index page showing users and their roles
 > Update and asign role to the user
 > Delete Users
-> 
+> Created fake posts using factory

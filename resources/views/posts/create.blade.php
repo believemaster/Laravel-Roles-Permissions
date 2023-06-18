@@ -22,4 +22,7 @@
             class="mt-10 rounded w-full bg-indigo-400 py-3 font-medium uppercase text-white hover:bg-indigo-600 hover:shadow-none focus:outline-none">Create
             Post</button>
     </form>
+    <a href="{{ route('posts.index') }}" type="submit"
+        class="mt-10 rounded px-2 bg-indigo-400 py-3 font-medium uppercase text-white hover:bg-indigo-600 hover:shadow-none focus:outline-none">Back</a>
+
 </x-guest-layout>

@@ -11,6 +11,7 @@ class RoleController extends Controller
 {
     public function index() {
         $roles = Role::whereNotIn('name', ['admin'])->orderBy('id')->get();
+        // $roles = Role::all();
 
         return view('admin.roles.index', compact('roles'));
     }

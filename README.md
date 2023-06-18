@@ -23,3 +23,5 @@ Simple Role Based Authentication For Laravel Projects
 > Created fake posts using factory
 > Displaying all the posts
 > Added policies for posts creation by roles only
+> Authorize user for creating new posts
+> 

@@ -31,15 +31,19 @@
                             </th>
                             <td class="px-6 py-4 text-right">
                                 <div class="flex space-x-2">
-                                    <a href="{{ route('posts.edit', $post->id) }}"
-                                        class="font-medium text-blue-600 hover:underline dark:text-blue-500">Edit</a>
-                                    <form method="post" action="{{ route('posts.destroy', $post->id) }}"
-                                        onsubmit="return confirm('Are you sure!');">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit"
-                                            class="font-medium text-red-600 hover:underline dark:text-red-500">Delete</button>
-                                    </form>
+                                    @can('update', $post)
+                                        <a href="{{ route('posts.edit', $post->id) }}"
+                                            class="font-medium text-blue-600 hover:underline dark:text-blue-500">Edit</a>
+                                    @endcan
+                                    @can('delete', $post)
+                                        <form method="post" action="{{ route('posts.destroy', $post->id) }}"
+                                            onsubmit="return confirm('Are you sure!');">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit"
+                                                class="font-medium text-red-600 hover:underline dark:text-red-500">Delete</button>
+                                        </form>
+                                    @endcan
                                 </div>
                             </td>
                         </tr>

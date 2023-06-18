@@ -25,4 +25,5 @@ Simple Role Based Authentication For Laravel Projects
 > Added policies for posts creation by roles only
 > Authorize user for creating new posts
 > Authorize the admin for all actions
+> Authorization for update and delete
 > 

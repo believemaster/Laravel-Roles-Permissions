@@ -21,6 +21,10 @@
                             {{ __('Admin') }}
                         </x-nav-link>
                     @endif
+
+                    <x-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.index')">
+                        {{ __('All Posts') }}
+                    </x-nav-link>
                 </div>
             </div>
 

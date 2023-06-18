@@ -1,10 +1,12 @@
 <x-guest-layout>
     <div class="mt-12 max-w-6xl mx-auto">
-        <div class="flex justify-end m-2 p-2">
-            <a href="{{ route('posts.create') }}"
-                class="px-4 py-2 bg-indigo-400 dark:bg-indigo-600 rounded text-white">Add New Post</a>
-        </div>
         <div class="relative overflow-x-auto shadow-md bg-gray-200 sm:rounded-lg">
+            @can('create', App\Models\Post::class)
+                <div class="flex justify-end p-2 dark:bg-gray-700">
+                    <a href="{{ route('posts.create') }}"
+                        class="px-4 py-2 bg-indigo-400 dark:bg-indigo-600 rounded text-white">Add New Post</a>
+                </div>
+            @endcan
             <table class="w-full text-left text-sm text-gray-500 dark:text-gray-400">
                 <thead class="text-xs bg-gray-50 uppercase dark:bg-gray-700 dark:text-gray-400">
                     <tr>

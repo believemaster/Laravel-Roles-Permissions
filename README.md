@@ -22,4 +22,4 @@ Simple Role Based Authentication For Laravel Projects
 > Delete Users
 > Created fake posts using factory
 > Displaying all the posts
-> 
+> Added policies for posts creation by roles only

@@ -26,4 +26,4 @@ Simple Role Based Authentication For Laravel Projects
 > Authorize user for creating new posts
 > Authorize the admin for all actions
 > Authorization for update and delete
-> 
+> Custom Admin blade directive
